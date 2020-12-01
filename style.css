@@ -36,6 +36,10 @@ body {
   top: 0;
 }
 
+.container:hover {
+  opacity: 0.5;
+}
+
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -69,7 +73,7 @@ body {
   text-transform: uppercase;
   background-color: #fafafa;
   background-color: rgba(255,255,255,0.6);
- list-style: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   width: auto;
@@ -79,6 +83,10 @@ body {
 .menu-h1 {
   padding: 10px 100px 10px 100px;
   text-align: center;
+}
+
+.menu-h1:hover {
+  opacity: 0.5;
 }
 
 footer{
