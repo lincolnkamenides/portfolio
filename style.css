@@ -132,10 +132,10 @@ footer{
   width: 100%;
   bottom: 0;
   background: #fafafa;
+  padding-bottom: 2.5rem;
   height: 2.5rem;
   text-align: center;
   color: #b1b1b1;
-  padding-bottom: 2.5rem;
   line-height: 20px;
   font-size: 25px;
   position: absolute;
