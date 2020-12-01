@@ -6,24 +6,7 @@ body {
   line-height: 20pxs;
   background-color: #ccbcdc;
   text-align: center;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: relative;
-}
-
-.topnav a {
-  color: #BC90E0;
-  padding: 20px ;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  padding-top: 60px;
 }
 
 .mobile-topnav {
