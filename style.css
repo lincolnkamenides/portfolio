@@ -1,6 +1,7 @@
 body {
+  color: white;
   margin: 0;
-  font-size: 14px;
+  font-size: 17px;
   font-family: 'Karla', sans-serif;
   line-height: 20pxs;
   background-color: #ccbcdc;
@@ -29,7 +30,7 @@ body {
   display: block;
   cursor: pointer;
   padding-right: 25px;
-  padding-top: 8px;
+  padding-top: 7px;
   position: absolute;
   right: 0;
   top: 0;
@@ -55,6 +56,31 @@ body {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.overlay #menu {
+  display: none;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  color: #BC90E0;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: #fafafa;
+  background-color: rgba(255,255,255,0.6);
+ list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  right: 0;
+}
+
+.menu-h1 {
+  padding: 10px 100px 10px 100px;
+  text-align: center;
+}
+
 footer{
   position: absolute;
   width: 100%;
@@ -67,3 +93,4 @@ footer{
   font-size: 12px;
   line-height: 20px;
 }
+
