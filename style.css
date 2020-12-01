@@ -89,6 +89,25 @@ body {
   opacity: 0.5;
 }
 
+.fa {
+  padding: 10px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  border-radius: 50%;
+  background: #ccbcdc;
+  color: white;
+}
+
+.fa:hover {
+ opacity: .5;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
 footer{
   position: absolute;
   width: 100%;
@@ -98,7 +117,6 @@ footer{
   text-align: center;
   color: #b1b1b1;
   padding-top: 20px;
-  font-size: 12px;
   line-height: 20px;
+  font-size: 25px;
 }
-
