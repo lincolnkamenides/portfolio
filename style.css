@@ -84,6 +84,7 @@ body {
   padding-left: 0;
   width: auto;
   right: 0;
+  transition: width 2s, height 4s;
 }
 
 .menu-h1 {
@@ -115,6 +116,22 @@ table {
 
 td {
   padding:10px;
+}
+
+.smallimgs {
+  filter: grayscale(100%);
+  width: 175px;
+  height: 175px;
+}
+
+.largeimgs {
+  width: 400px;
+  height: 400px;
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1)
 }
 
 .fa {
