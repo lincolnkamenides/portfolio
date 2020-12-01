@@ -16,7 +16,7 @@ body {
 
 .topnav a {
   color: #BC90E0;
-  padding: 16px ;
+  padding: 20px ;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
@@ -26,17 +26,38 @@ body {
   text-transform: uppercase;
 }
 
-.container {
+.mobile-topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.mobile-topnav a {
+  color: #BC90E0;
+  padding: 20px ;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.menu-button {
   display: block;
   cursor: pointer;
   padding-right: 25px;
-  padding-top: 7px;
+  padding-top: 10px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.container:hover {
+.menu-button:hover {
   opacity: 0.5;
 }
 
@@ -109,7 +130,6 @@ body {
 }
 
 footer{
-  position: absolute;
   width: 100%;
   bottom: 0;
   background: #fafafa;
@@ -117,6 +137,7 @@ footer{
   text-align: center;
   color: #b1b1b1;
   padding-top: 20px;
+padding-bottom: 5px;
   line-height: 20px;
   font-size: 25px;
 }
