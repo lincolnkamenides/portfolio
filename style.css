@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   margin: 0;
@@ -6,7 +10,59 @@ body {
   line-height: 20pxs;
   background-color: #ccbcdc;
   text-align: center;
+}
+
+.intro{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  padding: 7px;
+  height: 30px;
+  width: 30px;
+  bottom: 0;
+  filter: invert(100%);
+}
+
+.arrow:hover {
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+  filter: grayscale(100%);
+}
+
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume {
+  height: auto;
   padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work {
+  height: auto;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-topnav {
@@ -129,7 +185,12 @@ td {
   height: 400px;
 }
 
-img:hover {
+.largeimgs:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1)
+}
+
+.smallimgs:hover {
   filter: grayscale(0%);
   transform: scale(1.1)
 }
