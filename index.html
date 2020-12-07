@@ -16,14 +16,14 @@
 
      <div id="overlay" class="overlay">
       <ul id="menu" class="menu">
-       <li class="menu-h1"><a href="#about">About</a></li>
-       <li class="menu-h1"><a href="#resume">Résumé</a></li>
-       <li class="menu-h1"><a href="#work">Work</a></li>
-       <li class="menu-h1"><a href="#contact">Contact</a></li>
+       <li class="menu-h1"><a href="#about" onclick="openSideBar()">About</a></li>
+       <li class="menu-h1"><a href="#resume" onclick="openSideBar()">Résumé</a></li>
+       <li class="menu-h1"><a href="#work" onclick="openSideBar()">Work</a></li>
+       <li class="menu-h1"><a href="#contact" onclick="openSideBar()">Contact</a></li>
       </ul>
      </div>
 
-     <div class="menu-button" onclick="myFunction(this)">
+     <div id="menu-button" class="menu-button" onclick="openSideBar()">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -40,16 +40,28 @@
 
     <table>
      <tr> 
-      <td><img src="images/world.png" class="smallimgs"></td>
-      <td rowspan="2" colspan="2"><img src="images/coding.png" class="largeimgs"></td>
-      <td><img src="images/bts.png" class="smallimgs"></td>
+      <td><img src="images/world.png" id="myImg" class="smallimgs" onclick="openImage(this)"
+        alt="something"></td>
+      <td rowspan="2" colspan="2"><img src="images/coding.png" class="largeimgs" onclick="openImage(this)"
+        alt="something"></td>
+      <td><img src="images/bts.png" class="smallimgs" onclick="openImage(this)"
+        alt="something"></td>
      </tr>
      <tr> 
-      <td><img src="images/music.png" class="smallimgs"></td>
-      <td><img src="images/books.png" class="smallimgs"></td>
+      <td><img src="images/music.png" class="smallimgs" onclick="openImage(this)"
+        alt="something"></td>
+      <td><img src="images/books.png" class="smallimgs" onclick="openImage(this)"
+        alt="something"></td>
      </tr>
     </table>
     <a href="#resume"><img class="arrow" src="images/down-arrow.png" width="25" height="25"></a>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+     <span class="close">&times;</span>
+     <img class="modal-content" id="img01">
+     <div id="caption"></div>
     </div>
 
     <div class="resume" id="resume">
