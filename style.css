@@ -263,12 +263,16 @@ footer{
   background-color: rgba(255,255,255,0.9); /* Black w/ opacity */
 }
 
+.modal-row {
+  height: 500px;
+}
+
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 500px;
+  width: 350px;
 }
 
 /* Caption of Modal Image */
@@ -276,11 +280,10 @@ footer{
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
   text-align: center;
   color: black;
   padding: 10px 0;
-  height: 150px;
+  width: 400px;
 }
 
 /* Add Animation */
