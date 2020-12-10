@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+<!------------------ TITLE AND ICON ------------------>	
  <head>
-  <!-- title and icon -->
   <title>Lincoln Kamenides</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
@@ -10,55 +11,59 @@
 
  <body>
   <div id="page-container">
-   <div id="content-wrap">		
-    <div class="mobile-topnav">
+   <div id="content-wrap">
+
+<!------------------ TOP NAVIGATION ------------------>		
+    <div class="topnav">
      <a href="" class="active">Lincoln Kamenides</a>
 
-     <div id="overlay" class="overlay">
-      <ul id="menu" class="menu">
-       <li class="menu-h1"><a href="#about" onclick="openSideBar()">About</a></li>
-       <li class="menu-h1"><a href="#resume" onclick="openSideBar()">Résumé</a></li>
-       <li class="menu-h1"><a href="#work" onclick="openSideBar()">Work</a></li>
-       <li class="menu-h1"><a href="#contact" onclick="openSideBar()">Contact</a></li>
-      </ul>
-     </div>
-
-     <div id="menu-button" class="menu-button" onclick="openSideBar()">
+     <div id="menu-button" class="menu-button" onclick="toggleSideBar()">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
      </div>
+
+     <div id="overlay" class="overlay">
+      <ul id="menu" class="menu">
+       <li><a href="#about" onclick="toggleSideBar()">About</a></li>
+       <li><a href="#resume" onclick="toggleSideBar()">Résumé</a></li>
+       <li><a href="#work" onclick="toggleSideBar()">Work</a></li>
+       <li><a href="#contact" onclick="toggleSideBar()">Contact</a></li>
+      </ul>
+     </div>
     </div>
 
+<!------------------ INTRO ------------------>	
     <div class="intro">
      <p id="home">Welcome to my personal page.</p>
-     <a href="#about"><img class="arrow" src="images/down-arrow.png" width="25" height="25"></a>
+     <a href="#about"><img class="arrow" src="images/down-arrow.png"></a>
     </div>
 
+<!------------------ ABOUT ------------------>	
     <div class="about" id="about">
     <h>About</h> 
 
     <table>
      <tr> 
-      <td><img src="images/world.png" id="myImg" class="smallimgs" onclick="openImage(this)"
+      <td><img src="images/world.png" class="small-img" onclick="openImage(this)"
         alt="something"></td>
-      <td rowspan="2" colspan="2"><img src="images/coding.png" class="largeimgs" onclick="openImage(this)"
+      <td rowspan="2" colspan="2"><img src="images/coding.png" class="large-img" onclick="openImage(this)"
         alt="something"></td>
-      <td><img src="images/bts.png" class="smallimgs" onclick="openImage(this)"
+      <td><img src="images/bts.png" class="small-img" onclick="openImage(this)"
         alt="something"></td>
      </tr>
      <tr> 
-      <td><img src="images/music.png" class="smallimgs" onclick="openImage(this)"
+      <td><img src="images/music.png" class="small-img" onclick="openImage(this)"
         alt="something"></td>
-      <td><img src="images/books.png" class="smallimgs" onclick="openImage(this)"
+      <td><img src="images/books.png" class="small-img" onclick="openImage(this)"
         alt="something"></td>
      </tr>
     </table>
-    <a href="#resume"><img class="arrow" src="images/down-arrow.png" width="25" height="25"></a>
+    <a href="#resume"><img class="arrow" src="images/down-arrow.png"></a>
     </div>
 
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="modal" class="modal">
      <span class="close">&times;</span>
      <table class="modal-table">
       <tr class="modal-row">
@@ -68,9 +73,10 @@
      </table>
     </div>
 
+<!------------------ RESUME ------------------>	
     <div class="resume" id="resume">
      <h>Résumé</h> 
-     <div class="resumeList" id="resumeList">
+     <div class="resume-background" id="resume-background">
       <p>Résumé.</p>  
       <p>Résumé.</p>
       <p>Résumé.</p>
@@ -79,15 +85,16 @@
      </div>
     </div>
 
+<!------------------ WORK ------------------>	
     <div class="work" id="work">
      <h>Works</h> 
      <table>
       <tr>
        <td colspan="2">
-        <div class="polaroidFirst">
-<div class="polaroidFirstImageBox">
-         <img class="polaroidImage" src="images/CI1.png" alt="CI1" style="width:100%">
-</div>
+        <div class="first-polaroid">
+         <div class="first-polaroid-box">
+          <img src="images/CI1.png" alt="CI1">
+         </div>
          <div class="container">
           <p>Work</p>
          </div>
@@ -97,9 +104,9 @@
       <tr>
        <td>
         <div class="polaroid">
-<div class="polaroidImageBox">
-         <img src="images/CI1.png" alt="CI1" style="width:100%">
- </div>
+         <div class="polaroid-box">
+          <img src="images/CI1.png" alt="CI1">
+         </div>
           <div class="container">
            <p>Work</p>
           </div>
@@ -107,9 +114,9 @@
         </td>
         <td>
          <div class="polaroid">
-<div class="polaroidImageBox">
-          <img src="images/CI1.png" alt="CI1" style="width:100%">
- </div>
+          <div class="polaroid-box">
+           <img src="images/CI1.png" alt="CI1">
+          </div>
           <div class="container">
            <p>Work</p>
           </div>
@@ -120,18 +127,17 @@
     </div>
    </div>
 
+<!------------------ FOOTER ------------------>	
    <footer>
     <h id="contact" display="hidden"></h> 
     <a href="mailto:lincoln.kamenides@maine.edu" class="fa fa-google"></a>
     <a href="https://github.com/lincolnkamenides" target="_blank" class="fa fa-github"></a>
-    <div id="copyright" class="copyright">
-     <p>© 2020 Lincoln Kamenides.</p>
-    </div>   
+    <div id=copyright>
+     <p>© 2020 Lincoln Kamenides.</p> 
+    </div>
    </footer>
+
   </div>
  </body>
-
-
-
  <script src="script.js"></script>
 </html>

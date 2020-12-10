@@ -1,4 +1,4 @@
-function openSideBar() {
+function toggleSideBar() { // toggles the menu-button open and closed
   var list = document.getElementById("menu-button");
   list.classList.toggle("change");
 
@@ -10,9 +10,9 @@ function openSideBar() {
   }
 }
 
-function openImage(x) {
+function openImage(x) { //opens image in about with modal
  // Get the modal
- var modal = document.getElementById('myModal');
+ var modal = document.getElementById('modal');
 
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var img = x;
