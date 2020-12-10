@@ -166,10 +166,15 @@ td {
   align-items: center;
 }
 
+.about table {
+  table-layout: fixed;
+  width: 60%;
+}
+
 .small-img {
+  max-width: 175px;
+  width: 100%;
   filter: grayscale(100%);
-  width: 175px;
-  height: 175px;
   transition: .4s
 }
 
@@ -180,13 +185,19 @@ td {
 
 .large-img {
   width: 400px;
-  height: 400px;
+  width: 100%;
   transition: .4s
 }
 
 .large-img:hover {
   filter: grayscale(0%);
   transform: scale(1.1)
+}
+
+@media screen and (max-width:860px) {
+  .about table {
+    width: 90%;
+  }
 }
 
 /* The Modal (background) */
