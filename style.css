@@ -351,6 +351,10 @@ img.icon:hover {
 }
 
 @media screen and (max-width:675px) {
+  .resume-background {
+    width: 80%;
+  }
+  
   .right {
     display: none;
   }
