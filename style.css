@@ -350,6 +350,12 @@ img.icon:hover {
   float: right;
 }
 
+@media screen and (max-width:675px) {
+  .right {
+    display: none;
+  }
+}
+
 /********************** WORK **********************/
 .work {
   height: auto;
