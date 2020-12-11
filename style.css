@@ -24,16 +24,6 @@ h {
   text-transform: uppercase;
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-  border: display;
-}
-
-td {
-  padding:10px;
-}
-
 /********************** TOP NAVIGATION **********************/
 .topnav {
   overflow: hidden;
@@ -169,6 +159,13 @@ td {
 .about table {
   table-layout: fixed;
   width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: display;
+}
+
+.about td {
+  padding:10px;
 }
 
 .small-img {
@@ -215,15 +212,15 @@ td {
   background-color: rgba(255,255,255,0.9); /* Black w/ opacity */
 }
 
-.modal table {
-  position:absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.modal-row {
+  clear: both;
+  margin: auto;
 }
 
-.modal tr {
-  height: 350px;
+.modal-box {
+  width: 45%;
+  float: left;
+  margin: 20px;
 }
 
 /* Modal Content (image) */
@@ -231,18 +228,17 @@ td {
   margin: auto;
   display: block;
   width: 80%;
-  width: 350px;
+  max-width: 350px;
 }
 
 /* Caption of Modal Image */
 #caption {
   margin: auto;
-  display: block;
   width: 80%;
+  height: 80%;
   text-align: center;
   color: black;
   padding: 10px 0;
-  width: 400px;
 }
 
 /* Add Animation */
@@ -275,9 +271,12 @@ td {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 820px){
   .modal-content {
     width: 100%;
+  }
+  .modal-box {
+    width: 90%;
   }
 }
 
