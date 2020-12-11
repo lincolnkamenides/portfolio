@@ -308,6 +308,7 @@ h {
   margin-top: 20px;
   width: 70%;
   text-align: left;
+  max-width: 750px;
 }
 
 .section-header {
@@ -325,6 +326,10 @@ h {
 
 .section {
   margin-bottom: 40px;
+}
+
+.section-text {
+  margin-left: 70px;
 }
 
 img.icon {
@@ -399,6 +404,7 @@ img.icon:hover {
   overflow: hidden;
   display: inline-block;
   margin: 20px;
+  line-height: 0px;
 }
 
 .first-polaroid {
@@ -419,7 +425,7 @@ img.icon:hover {
 
 .container {
   text-align: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 @media screen and (max-width:860px) {
