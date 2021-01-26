@@ -1,3 +1,10 @@
+:root {
+  --color1: #4c495d; /*gray -- resume background*/
+  --color2: #bf94e4; /*light purple -- background*/
+  --color3: #2d283e; /*dark gray -- headers, descriptions*/
+  --color4: #802bb1; /*dark purple -- topnav*/
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,13 +15,13 @@ body {
   font-size: 17px;
   font-family: 'Karla', sans-serif;
   line-height: 20pxs;
-  background-color: #ccbcdc;
+  background-color: var(--color2);
   text-align: center;
 }
 
 h {
-  color: gray;
-  padding: 10px ;
+  color: var(--color3);
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
@@ -27,7 +34,7 @@ h {
 /********************** TOP NAVIGATION **********************/
 .topnav {
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: white;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -35,7 +42,7 @@ h {
 }
 
 .topnav a {
-  color: #BC90E0;
+  color: var(--color4);
   padding: 20px ;
   text-align: center;
   text-decoration: none;
@@ -64,7 +71,7 @@ h {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #ccbcdc;
+  background-color: var(--color2);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -86,7 +93,7 @@ h {
   position: fixed;
   text-align: center;
   z-index: 1;
-  color: #BC90E0;
+  color: var(--color2);
   text-decoration: none;
   font-size: 17px;
   font-family: 'Montserrat', sans-serif;
@@ -126,6 +133,7 @@ h {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color2);
 }
 
 .arrow {
@@ -144,7 +152,7 @@ h {
   margin: 0;
   border-radius: 50%;
   background-color: white;
-  fill: #ccbcdc;
+  fill: var(--color2);
 }
 
 /********************** ABOUT **********************/
@@ -268,7 +276,7 @@ h {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: gray;
+  color: var(--color2);
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -302,9 +310,9 @@ h {
 }
 
 .resume-background {
-  border-radius: 5%;
+  border-radius: 30px;
   padding: 20px;
-  background-color: gray;
+  background-color: var(--color1);
   margin-top: 20px;
   width: 70%;
   text-align: left;
@@ -459,7 +467,7 @@ img.icon:hover {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
-  color: gray;
+  color: var(--color3);
   overflow: hidden;
   display: inline-block;
   margin: 20px;
@@ -470,7 +478,7 @@ img.icon:hover {
   width: 94.5%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: gray;
+  color: var(--color3);
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -528,7 +536,7 @@ footer {
   text-decoration: none;
   margin: 0;
   border-radius: 50%;
-  background: #ccbcdc;
+  background: var(--color2);
   color: white;
 }
 
