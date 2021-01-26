@@ -442,6 +442,14 @@ img.icon:hover {
   transform: scale(1.1); 
 }
 
+.work p {
+  padding: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+  line-height: 24px;
+}
+
 .row {
   clear: both;
 }
@@ -469,6 +477,10 @@ img.icon:hover {
   margin: 20px;
 }
 
+.first-polaroid-sq {
+  display: none;
+}
+
 .polaroid-box {
   width: 100%;
   overflow: hidden;
@@ -477,11 +489,21 @@ img.icon:hover {
 .container {
   text-align: center;
   padding: 20px 20px;
+  overflow: visible;
+  height: auto;
 }
 
 @media screen and (max-width:860px) {
   .polaroid {
     width: 90%;
+  }
+ 
+  .first-polaroid-rect {
+    display: none;
+  }
+
+  .first-polaroid-sq {
+    display: block;
   }
 }
 
