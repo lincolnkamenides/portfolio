@@ -133,7 +133,8 @@ h {
   height: 30px;
   width: 30px;
   bottom: 0;
-  filter: invert(100%);
+  fill: white;
+  transition: .4s
 }
 
 .arrow:hover {
@@ -143,8 +144,7 @@ h {
   margin: 0;
   border-radius: 50%;
   background-color: white;
-  color: white;
-  filter: grayscale(100%);
+  fill: #ccbcdc;
 }
 
 /********************** ABOUT **********************/
