@@ -355,6 +355,43 @@ img.icon:hover {
   float: right;
 }
 
+.center-skills {
+  margin: auto;
+  width: 75%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 598px;
+  padding: auto;
+}
+
+.skills div {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.skills svg {
+  fill: white;
+}
+
+.skills p {
+  padding: 0;
+  margin: 5px;
+  text-align: center;
+}
+
 @media screen and (max-width:675px) {
   .resume-background {
     width: 80%;
@@ -362,6 +399,20 @@ img.icon:hover {
   
   .right {
     display: none;
+  }
+}
+
+@media screen and (max-width:931px) {
+  .center-skills {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:870px) {
+  .center-skills {
+    margin: 0px;
+    width: 100%;
   }
 }
 
