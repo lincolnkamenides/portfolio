@@ -33,12 +33,16 @@ function openImage(x) { //opens image in about with modal
  }
 }
 
-function openSlideShow(x) { //opens image in about with modal
+var slideIndex = 1;
+
+function openSlideShow(img, modal, slides) { //opens image in about with modal
 // Get the modal
- var modal = document.getElementById('modal-slideshow');
+ var modal = document.getElementById(modal);
+
+ getSlides(slides);
 
  // Get the image and insert it inside the modal - use its "alt" text as a caption
- var img = x;
+ var img = img;
  img.onclick = function(){
    modal.style.display = "block";
  }
@@ -52,21 +56,23 @@ function openSlideShow(x) { //opens image in about with modal
  }
 }
 
+function getSlides(slides) {
 var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideIndex, slides);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function plusSlides(n, name) {
+  showSlides(slideIndex += n, name);
 }
 
-function showSlides(n) {
+function currentSlide(n, name) {
+  showSlides(slideIndex = n, name);
+}
+
+function showSlides(n, name) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("thumbnail");
+  var slides = document.getElementsByClassName("mySlides " + name);
+  var dots = document.getElementsByClassName("thumbnail " + name);
   var slideCaptionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -80,4 +86,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   slideCaptionText.innerHTML = dots[slideIndex-1].alt;
 }
-
