@@ -222,6 +222,7 @@ h {
 .modal-center {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .modal-row {
@@ -283,7 +284,7 @@ h {
 
 .close:hover,
 .close:focus {
-  opacity: 0.5;
+  color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
@@ -500,34 +501,25 @@ img.icon:hover {
   height: auto;
 }
 
-/********Modal Slideshow**********/
-.modal-slideshow {
-  display: none;
-}
+/****Modal Slideshow****/
 
 .slideshow {
-  display: flex;
+  margin-bottom: 50px;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.slideshow table {
-  table-layout: fixed;
-  width: 90%;
-  border: display;
-  max-width: 651.2px;
-}
-
 .slideshow img {
   vertical-align: middle;
-  width: 100%;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .slideshow-container {
+  width: 70%;
   position: relative;
-  max-width: 600px;
+  display: inline-block;
 }
 
 /* Hide the images by default */
@@ -545,16 +537,20 @@ img.icon:hover {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: var(--color2);
+  color: black;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
 }
 
 /* Position the "next button" to the right */
@@ -563,20 +559,16 @@ img.icon:hover {
   border-radius: 3px 0 0 3px;
 }
 
-.prev {
-  left: 0px;
-}
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: var(--color1);
-  border-radius: 7px;
+  background-color: var(--color2);
+  color: white;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: var(--color1);
+  color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -586,18 +578,44 @@ img.icon:hover {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: var(--color1);
-  padding: 20px;
+  background-color: #222;
+  padding: 2px 16px;
   color: white;
 }
 
+.slideshow #caption {
+  background-color: #222;
+  color: white;
+}
+
+.slide {
+  width: 70%;
+  display: inline-block;
+}
+
+.slideshow .row {
+  display: inline-block;
+  width: 16.66%
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+
+}
+
 /* Add a transparency effect for thumnbail images */
-.thumbnail {
+.demo {
   opacity: 0.6;
 }
 
 .active,
-.thumbnail:hover {
+.demo:hover {
   opacity: 1;
 }
 
