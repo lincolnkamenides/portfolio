@@ -185,6 +185,7 @@ h {
 
 .small-img:hover {
   filter: grayscale(0%);
+  cursor: pointer;
   transform: scale(1.1)
 }
 
@@ -196,6 +197,7 @@ h {
 
 .large-img:hover {
   filter: grayscale(0%);
+  cursor: pointer;
   transform: scale(1.1)
 }
 
