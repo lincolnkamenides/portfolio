@@ -126,6 +126,17 @@ h {
   }
 }
 
+@media only screen and (max-width: 400px){
+  .overlay #menu {
+    width: 100%;
+  }
+
+  .topnav li {
+    padding: 10px 0 10px 0;
+    text-align: center;
+  }
+}
+
 /********************** INTRO **********************/
 .intro {
   height: 100vh;
@@ -399,7 +410,7 @@ img.icon.link:hover {
   text-align: center;
 }
 
-@media screen and (max-width:675px) {
+@media screen and (max-width:702px) {
   .resume-background {
     width: 80%;
   }
@@ -527,11 +538,6 @@ img.icon.link:hover {
     display: table-cell;
     vertical-align: middle;
 }
-
-/* Modal Content */
-.modal-content-slideshow {
-}
-
 
 .slideshow {
   display: flex;

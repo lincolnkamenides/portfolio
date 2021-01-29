@@ -35,11 +35,11 @@ function openImage(x) { //opens image in about with modal
 
 var slideIndex = 1;
 
-function openSlideShow(img, modal, slides) { //opens image in about with modal
+function openSlideShow(img, modal, name) { //opens image in about with modal
 // Get the modal
  var modal = document.getElementById(modal);
 
- getSlides(slides);
+ getSlides(name);
 
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var img = img;
@@ -48,7 +48,7 @@ function openSlideShow(img, modal, slides) { //opens image in about with modal
  }
 
  // Get the <span> element that closes the modal
- var span = document.getElementsByClassName("close " + slides)[0];
+ var span = document.getElementsByClassName("close " + name)[0];
 
  // When the user clicks on <span> (x), close the modal
  span.onclick = function() { 
@@ -56,9 +56,9 @@ function openSlideShow(img, modal, slides) { //opens image in about with modal
  }
 }
 
-function getSlides(slides) {
-var slideIndex = 1;
-showSlides(slideIndex, slides);
+function getSlides(name) {
+  slideIndex = 1;
+  showSlides(slideIndex, name);
 }
 
 function plusSlides(n, name) {
