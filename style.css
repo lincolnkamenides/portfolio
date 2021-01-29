@@ -489,6 +489,7 @@ img.icon.link:hover {
 .polaroid-box {
   width: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .container {
