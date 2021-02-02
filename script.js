@@ -1,18 +1,20 @@
+// navigation menu toggle
 function toggleSideBar() { // toggles the menu-button open and closed
   var list = document.getElementById("menu-button");
   list.classList.toggle("change");
 
-  var y = document.getElementById("menu");
+  var menu = document.getElementById("menu");
   if (y.style.display === "block") {
-    y.style.display = "none";
+    menu.style.display = "none";
   } else {
-    y.style.display = "block";
+    menu.style.display = "block";
   }
 }
 
+// open image modal on about section
 function openImage(x) { //opens image in about with modal
  // Get the modal
- var modal = document.getElementById('modal');
+ var modal = document.getElementById('modal-row');
 
  // Get the image and insert it inside the modal - use its "alt" text as a caption
  var img = x;
@@ -33,6 +35,7 @@ function openImage(x) { //opens image in about with modal
  }
 }
 
+//opens slideshow in works section
 var slideIndex = 1;
 
 function openSlideShow(img, modal, name) { //opens image in about with modal

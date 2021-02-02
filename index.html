@@ -78,19 +78,21 @@
               </g>
             </div>
           </a>
-        </div>
-        <!-- The Modal -->
-        <div id="modal" class="modal">
-          <span class="close" id="close">&times;</span>
-          <div class="modal-center">
-            <div class="modal-row">
-              <div class="modal-box"><img class="modal-content" id="img01"></div>
-              <div class="modal-box">
-                <div id="caption"></div>
+          <!-- The Modal -->
+          <div class="modal-row" id="modal-row">
+            <span class="close" id="close-box">&times;</span>
+            <div class="modal-box"><img class="modal-content" id="img01"></div>
+            <div class="modal-box">
+              <h id="caption"></h>
+            </div>
+            <div class="modal-box">
+              <div class="description">
+                description
               </div>
             </div>
           </div>
         </div>
+        
         <!------------------ RESUME ------------------>	
         <div class="resume" id="resume">
           <h>Résumé</h>
@@ -449,8 +451,8 @@
           <div class="inner">
             <div class="polaroid first-polaroid">
               <div class="polaroid-box">
-                <img class="first-polaroid-rect" src="images/capstone/ci-main-menu-rect.png" onclick="openSlideShow(this, 'modal-slideshow-1', '1')" alt="CI1">
-                <img class="first-polaroid-sq" src="images/capstone/ci-main-menu.png" onclick="openSlideShow(this, 'modal-slideshow-1', '1')" alt="CI1">
+                <img class="first-polaroid-rect" src="images/capstone/ci-main-menu-rect.png" onclick="openSlideShow(this, 'modal-slideshow-1', '1')" alt="ci-main-menu">
+                <img class="first-polaroid-sq" src="images/capstone/ci-main-menu.png" onclick="openSlideShow(this, 'modal-slideshow-1', '1')" alt="ci-main-menu">
               </div>
               <div class="container">
                 <p><b>Capstone Project</b>&emsp; A data entry system that captures the Immunization Registry information.
@@ -460,17 +462,17 @@
             <div class="row">
               <div class="polaroid">
                 <div class="polaroid-box">
-                 <a href="#page-container">
+                  <a href="#page-container">
                   <img src="images/this-website.jpg" alt="this-website">
-                 </a>
+                  </a>
                 </div>
                 <div class="container">
-                  <p><b>This website</b>&emsp;</p> 
+                  <p><b>This website</b>&emsp;</p>
                 </div>
               </div>
               <div class="polaroid">
                 <div class="polaroid-box">
-                  <img src="images/amanda/a-home.png" onclick="openSlideShow(this, 'modal-slideshow-2', '2')" alt="CI1">
+                  <img src="images/amanda/a-home.png" onclick="openSlideShow(this, 'modal-slideshow-2', '2')" alt="a-home">
                 </div>
                 <div class="container">
                   <p><b>Amanda</b>&emsp;</p>
@@ -491,114 +493,114 @@
                         <div class="slideshow-container">
                           <div class="mySlides 1">
                             <div class="numbertext">1 / 11</div>
-                            <img src="images/capstone/ci-main-menu.png" >
+                            <img src="images/capstone/ci-main-menu.png" alt="ci-main-menu">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">2 / 11</div>
-                            <img src="images/capstone/ci-select-month.png">
+                            <img src="images/capstone/ci-select-month.png" alt="ci-select-month">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">3 / 11</div>
-                            <img src="images/capstone/ci-monthly-report.png">
+                            <img src="images/capstone/ci-monthly-report.png" alt="ci-monthly-report">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">4 / 11</div>
-                            <img src="images/capstone/ci-due-immunizations.png">
+                            <img src="images/capstone/ci-due-immunizations.png" alt="ci-due-immunizations">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">5 / 11</div>
-                            <img src="images/capstone/ci-patient-search.png">
+                            <img src="images/capstone/ci-patient-search.png" alt="ci-patient-search">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">6 / 11</div>
-                            <img src="images/capstone/ci-vaccine-history.png">
+                            <img src="images/capstone/ci-vaccine-history.png" alt="ci-vaccine-history">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">7 / 11</div>
-                            <img src="images/capstone/ci-no-vaccines.png">
+                            <img src="images/capstone/ci-no-vaccines.png" alt="ci-no-vaccines">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">8 / 11</div>
-                            <img src="images/capstone/ci-add-vaccine.png">
+                            <img src="images/capstone/ci-add-vaccine.png" alt="ci-add-vaccine">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">9 / 11</div>
-                            <img src="images/capstone/ci-add-success.png">
+                            <img src="images/capstone/ci-add-success.png" alt="ci-add-success">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">10 / 11</div>
-                            <img src="images/capstone/ci-error1.png">
+                            <img src="images/capstone/ci-error1.png" alt="ci-error1">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 1">
                             <div class="numbertext">11 / 11</div>
-                            <img src="images/capstone/ci-error2.png">
+                            <img src="images/capstone/ci-error2.png" alt="ci-error2">
                             <div class="caption-container">caption</div>
                           </div>
                           <a class="prev" onclick="plusSlides(-1, '1')">❮</a>
                           <a class="next" onclick="plusSlides(1, '1')">❯</a>
                       </td>
                       <td>
-                      <img class="thumbnail cursor 1" src="images/capstone/ci-main-menu.png" onclick="currentSlide(1, '1')" alt="The Woodshi">
+                      <img class="thumbnail cursor 1" src="images/capstone/ci-main-menu.png" onclick="currentSlide(1, '1')" alt="ci-main-menu">
                       </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-select-month.png" onclick="currentSlide(2, '1')" alt="Cinque Terre">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-select-month.png" onclick="currentSlide(2, '1')" alt="ci-select-month">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-monthly-report.png" onclick="currentSlide(3, '1')" alt="Mountains and fjords">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-monthly-report.png" onclick="currentSlide(3, '1')" alt="ci-monthly-report">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-due-immunizations.png" onclick="currentSlide(4, '1')" alt="Northern Lights">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-due-immunizations.png" onclick="currentSlide(4, '1')" alt="ci-due-immunizations">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-patient-search.png" onclick="currentSlide(5, '1')" alt="Nature and sunrise">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-patient-search.png" onclick="currentSlide(5, '1')" alt="ci-patient-search">
                     </td>
                     </tr>
                     <tr>
                     <td>  
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-vaccine-history.png" onclick="currentSlide(6, '1')" alt="Snowy Mountains">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-vaccine-history.png" onclick="currentSlide(6, '1')" alt="ci-vaccine-history">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-no-vaccines.png" onclick="currentSlide(7, '1')" alt="The Woods">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-no-vaccines.png" onclick="currentSlide(7, '1')" alt="ci-no-vaccines">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-add-vaccine.png" onclick="currentSlide(8, '1')" alt="Cinque Terre">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-add-vaccine.png" onclick="currentSlide(8, '1')" alt="ci-add-vaccine">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-add-success.png" onclick="currentSlide(9, '1')" alt="Mountains and fjords">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-add-success.png" onclick="currentSlide(9, '1')" alt="ci-add-success">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-error1.png" onclick="currentSlide(10, '1')" alt="Northern Lights">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-error1.png" onclick="currentSlide(10, '1')" alt="ci-error1">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 1" src="images/capstone/ci-error2.png" onclick="currentSlide(11, '1')" alt="Nature and sunrise">
+                    <img class="thumbnail cursor 1" src="images/capstone/ci-error2.png" onclick="currentSlide(11, '1')" alt="ci-error2">
                     </div>
                     </td>
                     </tr>
@@ -620,166 +622,166 @@
                         <div class="slideshow-container">
                           <div class="mySlides 2">
                             <div class="numbertext">1 / 14</div>
-                            <img src="images/amanda/a-home.png" >
+                            <img src="images/amanda/a-home.png" alt="a-home">
                             <div class="caption-container">captjdkjsdkjdion</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">2 / 14</div>
-                            <img src="images/amanda/a-log-in.png">
+                            <img src="images/amanda/a-log-in.png" alt="a-log-in">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">3 / 14</div>
-                            <img src="images/amanda/a-sign-up.png">
+                            <img src="images/amanda/a-sign-up.png" alt="a-sign-up">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">4 / 14</div>
-                            <img src="images/amanda/a-weather.png">
+                            <img src="images/amanda/a-weather.png" alt="a-weather">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">5 / 14</div>
-                            <img src="images/amanda/a-calendar.png">
+                            <img src="images/amanda/a-calendar.png" alt="a-calendar">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">6 / 14</div>
-                            <img src="images/amanda/a-day-detail.png">
+                            <img src="images/amanda/a-day-detail.png" alt="a-day-detail">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">7 / 14</div>
-                            <img src="images/amanda/a-to-do.png">
+                            <img src="images/amanda/a-to-do.png" alt="a-to-do">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">8 / 14</div>
-                            <img src="images/amanda/a-create.png">
+                            <img src="images/amanda/a-create.png" alt="a-create">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">9 / 14</div>
-                            <img src="images/amanda/a-edit.png">
+                            <img src="images/amanda/a-edit.png" alt="a-edit">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">10 / 14</div>
-                            <img src="images/amanda/a-joke-1.png">
+                            <img src="images/amanda/a-joke-1.png" alt="a-joke-1">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">11 / 14</div>
-                            <img src="images/amanda/a-joke-2.png">
+                            <img src="images/amanda/a-joke-2.png" alt="a-joke-2">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">12 / 14</div>
-                            <img src="images/amanda/a-mood.png">
+                            <img src="images/amanda/a-mood.png" alt="a-mood">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">13 / 14</div>
-                            <img src="images/amanda/a-settings.png">
+                            <img src="images/amanda/a-settings.png" alt="a-settings">
                             <div class="caption-container">caption</div>
                           </div>
                           <div class="mySlides 2">
                             <div class="numbertext">14 / 14</div>
-                            <img src="images/amanda/a-log-out.png">
+                            <img src="images/amanda/a-log-out.png" alt="a-log-out">
                             <div class="caption-container">caption</div>
                           </div>
                           <a class="prev" onclick="plusSlides(-1, '2')">❮</a>
                           <a class="next" onclick="plusSlides(1, '2')">❯</a>
                       </td>
                       <td>
-                      <img class="thumbnail cursor 2" src="images/amanda/a-home.png" onclick="currentSlide(1, '2')" alt="The Woodshi">
+                      <img class="thumbnail cursor 2" src="images/amanda/a-home.png" onclick="currentSlide(1, '2')" alt="a-home">
                       </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-log-in.png" onclick="currentSlide(2, '2')" alt="Cinque Terre">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-log-in.png" onclick="currentSlide(2, '2')" alt="a-log-in">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-sign-up.png" onclick="currentSlide(3, '2')" alt="Mountains and fjords">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-sign-up.png" onclick="currentSlide(3, '2')" alt="a-sign-up">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-weather.png" onclick="currentSlide(4, '2')" alt="Northern Lights">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-weather.png" onclick="currentSlide(4, '2')" alt="a-weather">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-calendar.png" onclick="currentSlide(5, '2')" alt="Nature and sunrise">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-calendar.png" onclick="currentSlide(5, '2')" alt="a-calendar">
                     </td>
                     </tr>
                     <tr>
                     <td>  
-                    <img class="thumbnail cursor 2" src="images/amanda/a-day-detail.png" onclick="currentSlide(6, '2')" alt="Snowy Mountains">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-day-detail.png" onclick="currentSlide(6, '2')" alt="a-day-detail">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-to-do.png" onclick="currentSlide(7, '2')" alt="The Woods">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-to-do.png" onclick="currentSlide(7, '2')" alt="a-to-do">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-create.png" onclick="currentSlide(8, '2')" alt="Cinque Terre">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-create.png" onclick="currentSlide(8, '2')" alt="a-create">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-edit.png" onclick="currentSlide(9, '2')" alt="Mountains and fjords">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-edit.png" onclick="currentSlide(9, '2')" alt="a-edit">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-joke-1.png" onclick="currentSlide(10, '2')" alt="Northern Lights">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-joke-1.png" onclick="currentSlide(10, '2')" alt="a-joke-1">
                     </td>
                     </tr>
                     <tr>
                     <td>
-                    <img class="thumbnail cursor 2" src="images/amanda/a-joke-2.png" onclick="currentSlide(11, '2')" alt="Nature and sunrise">
+                    <img class="thumbnail cursor 2" src="images/amanda/a-joke-2.png" onclick="currentSlide(11, '2')" alt="a-joke-2">
                     </div>
                     </td>
                     </tr>
                     <tr>
                       <td>
-                      <img class="thumbnail cursor 2" src="images/amanda/a-mood.png" onclick="currentSlide(12, '2')" alt="Nature and sunrise">
-                      </div>
-                      </td>
-                      </tr>
-                      <tr>
-                        <td>
-                        <img class="thumbnail cursor 2" src="images/amanda/a-settings.png" onclick="currentSlide(13, '2')" alt="Nature and sunrise">
-                        </div>
-                        </td>
-                        </tr>
-                        <tr>
-                          <td>
-                          <img class="thumbnail cursor 2" src="images/amanda/a-log-out.png" onclick="currentSlide(14, '2')" alt="Nature and sunrise">
-                          </div>
-                          </td>
-                          </tr>
-                  </table>
-                 </div>
+                        <img class="thumbnail cursor 2" src="images/amanda/a-mood.png" onclick="currentSlide(12, '2')" alt="a-mood">
+                </div>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <img class="thumbnail cursor 2" src="images/amanda/a-settings.png" onclick="currentSlide(13, '2')" alt="a-settings">
               </div>
+              </td>
+              </tr>
+              <tr>
+              <td>
+              <img class="thumbnail cursor 2" src="images/amanda/a-log-out.png" onclick="currentSlide(14, '2')" alt="a-log-out">
             </div>
+            </td>
+            </tr>
+            </table>
           </div>
         </div>
       </div>
-      <!------------------ FOOTER ------------------>	
-      <footer>
-        <h id="contact" display="hidden"></h>
-        <a href="mailto:lincoln.kamenides@maine.edu" class="fa fa-google"></a>
-        <a href="https://github.com/lincolnkamenides" target="_blank" class="fa fa-github"></a>
-        <div id=copyright>
-          <p>© 2020 Lincoln Kamenides.</p>
-        </div>
-      </footer>
+    </div>
+    </div>
+    </div>
+    <!------------------ FOOTER ------------------>	
+    <footer>
+      <h id="contact" display="hidden"></h>
+      <a href="mailto:lincoln.kamenides@maine.edu" class="fa fa-google"></a>
+      <a href="https://github.com/lincolnkamenides" target="_blank" class="fa fa-github"></a>
+      <div id=copyright>
+        <p>© 2020 Lincoln Kamenides.</p>
+      </div>
+    </footer>
     </div>
   </body>
   <script src="script.js"></script>
