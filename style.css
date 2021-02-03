@@ -351,18 +351,47 @@ h {
 }
 
 /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 650px){
+  .pointBoxArrowRightMiddle {
+    margin-left: 103px;
+  }
+
+  .middle {   
+    margin-left: 130px;
+  }
+}
+
 @media only screen and (max-width: 562px){
-  .pointBoxArrow {
-    display: none;
+  .pointBoxArrowRight {
+    margin-top: -80px;
+    margin-left: 25px;
   }
 
-  .modal-background{
+  .pointBoxArrowLeft {
+    margin-top: -65px;
+    margin-left: 13px;
+  }
+
+  .modal-background {
     margin-top: -130px;
-    margin-left: 0;
-    top: 0;
-    left: 25%;
   }
 
+  .right {
+    margin-left: 50px;
+  }
+
+  .left {
+    margin-left: -225px;
+  }
+
+  .pointBoxArrowRightMiddle {
+    display: none
+  }
+
+  .middle {   
+    margin-top: -200px;
+    margin-left: -50px;
+  }
 }
 
 /********************** RESUME **********************/
@@ -572,7 +601,7 @@ img.icon.link:hover {
 .modal-slideshow {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */

@@ -25,7 +25,7 @@ function openImage(image, item) { //opens image in about with modal
 
    // closes other modals
    for(var i = 0; i < modals.length; i++) {
-    if(modals[i].localeCompare(item) != 0){
+    if(modals[i].localeCompare(item) != 0) {
      document.getElementById(modals[i]).style.display = "none";
     }
   }
