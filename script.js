@@ -4,7 +4,7 @@ function toggleSideBar() { // toggles the menu-button open and closed
   list.classList.toggle("change");
 
   var menu = document.getElementById("menu");
-  if (y.style.display === "block") {
+  if (menu.style.display === "block") {
     menu.style.display = "none";
   } else {
     menu.style.display = "block";
@@ -12,22 +12,27 @@ function toggleSideBar() { // toggles the menu-button open and closed
 }
 
 // open image modal on about section
-function openImage(x) { //opens image in about with modal
+function openImage(image, item) { //opens image in about with modal
+ var modals = ['world', 'coding', 'bts', 'music', 'books'];
+
  // Get the modal
- var modal = document.getElementById('modal-row');
+ var modal = document.getElementById(item);
 
  // Get the image and insert it inside the modal - use its "alt" text as a caption
- var img = x;
- var modalImg = document.getElementById("img01");
- var captionText = document.getElementById("caption");
+ var img = image;
  img.onclick = function(){
    modal.style.display = "block";
-   modalImg.src = this.src;
-   captionText.innerHTML = this.alt;
+
+   // closes other modals
+   for(var i = 0; i < modals.length; i++) {
+    if(modals[i].localeCompare(item) != 0){
+     document.getElementById(modals[i]).style.display = "none";
+    }
+  }
  }
 
  // Get the <span> element that closes the modal
- var span = document.getElementsByClassName("close")[0];
+ var span = document.getElementsByClassName("close " + item)[0];
 
  // When the user clicks on <span> (x), close the modal
  span.onclick = function() { 

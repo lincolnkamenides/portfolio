@@ -52,18 +52,119 @@
           <h>About</h>
           <table>
             <tr>
-              <td><img src="images/world.png" class="small-img" onclick="openImage(this)"
-                alt="Culture and History."></td>
-              <td rowspan="2" colspan="2"><img src="images/coding.png" class="large-img" onclick="openImage(this)"
-                alt="Programming."></td>
-              <td><img src="images/bts.png" class="small-img" onclick="openImage(this)"
-                alt="BTS."></td>
+              <td>
+                <img src="images/world.png" class="small-img" onclick="openImage(this, 'world')"
+                  alt="Culture and History.">
+                <div class="modal-item" id="world">
+                  <div class="pointBoxArrow">
+                    <svg class="pointBoxArrow pointBoxArrowRight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+                      <path fill="#ffffff" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
+                    </svg>
+                  </div>
+                  <div class="modal-background right">
+                    <span class="close world" id="close-box">&times;</span>
+                    <div class="modal-box"><img class="modal-content" src="images/world.png"></div>
+                    <div class="modal-box">
+                      <h id="caption">Culture and History</h>
+                    </div>
+                    <div class="modal-box">
+                      <div class="description">
+                        description
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td rowspan="2" colspan="2"><img src="images/coding.png" class="large-img" onclick="openImage(this, 'coding')"
+                alt="Programming.">
+                <div class="modal-item" id="coding">
+                  <div class="pointBoxArrow">
+                    <svg class="pointBoxArrow pointBoxArrowRightMiddle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+                      <path fill="#ffffff" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
+                    </svg>
+                  </div>
+                  <div class="modal-background middle">
+                    <span class="close coding" id="close-box">&times;</span>
+                    <div class="modal-box"><img class="modal-content" src="images/coding.png"></div>
+                    <div class="modal-box">
+                      <h id="caption">Programming</h>
+                    </div>
+                    <div class="modal-box">
+                      <div class="description">
+                        description
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td><img src="images/bts.png" class="small-img" onclick="openImage(this, 'bts')"
+                alt="BTS.">
+                <div class="modal-item" id="bts">
+                  <div class="pointBoxArrow">
+                    <svg class="pointBoxArrow pointBoxArrowLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+                      <path fill="#ffffff" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path>
+                    </svg>
+                  </div>
+                  <div class="modal-background left">
+                    <span class="close bts" id="close-box">&times;</span>
+                    <div class="modal-box"><img class="modal-content" src="images/bts.png"></div>
+                    <div class="modal-box">
+                      <h id="caption">BTS</h>
+                    </div>
+                    <div class="modal-box">
+                      <div class="description">
+                        description
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td><img src="images/music.png" class="small-img" onclick="openImage(this)"
-                alt="Music."></td>
-              <td><img src="images/books.png" class="small-img" onclick="openImage(this)"
-                alt="Reading."></td>
+              <td><img src="images/music.png" class="small-img" onclick="openImage(this, 'music')"
+                alt="Music.">
+                <div class="modal-item" id="music">
+                  <div class="pointBoxArrow">
+                    <svg class="pointBoxArrow pointBoxArrowRight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+                      <path fill="#ffffff" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
+                    </svg>
+                  </div>
+                  <div class="modal-background right">
+                    <span class="close music" id="close-box">&times;</span>
+                    <div class="modal-box"><img class="modal-content"src="images/music.png"></div>
+                    <div class="modal-box">
+                      <h id="caption">Music</h>
+                    </div>
+                    <div class="modal-box">
+                      <div class="description">
+                        description
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td><img src="images/books.png" class="small-img" onclick="openImage(this, 'books')"
+                alt="Reading.">
+                <div class="modal-item" id="books">
+                  <div class="pointBoxArrow">
+                    <svg class="pointBoxArrow pointBoxArrowLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+                      <path fill="#ffffff" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path>
+                    </svg>
+                  </div>
+                  <div class="modal-background left">
+                    <span class="close books" id="close-box">&times;</span>
+                    <div class="modal-box"><img class="modal-content" src="images/books.png"></div>
+                    <div class="modal-box">
+                      <h id="caption">Reading</h>
+                    </div>
+                    <div class="modal-box">
+                      <div class="description">
+                        description
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
           </table>
           <a href="#resume">
@@ -79,20 +180,7 @@
             </div>
           </a>
           <!-- The Modal -->
-          <div class="modal-row" id="modal-row">
-            <span class="close" id="close-box">&times;</span>
-            <div class="modal-box"><img class="modal-content" id="img01"></div>
-            <div class="modal-box">
-              <h id="caption"></h>
-            </div>
-            <div class="modal-box">
-              <div class="description">
-                description
-              </div>
-            </div>
-          </div>
         </div>
-        
         <!------------------ RESUME ------------------>	
         <div class="resume" id="resume">
           <h>Résumé</h>
@@ -102,9 +190,9 @@
             <div class="section">
               <a target="_blank" href="https://usm.maine.edu"><img class="icon link" src="images/usm-logo.png" alt="USM Logo"></a>
               <b>University of Southern Maine</b>
-              <span class="right">2017 - 2020</span><br/>
+              <span class="right-text">2017 - 2020</span><br/>
               Computer Science, B.S.
-              <span class="right">Portland, ME</span><br/>
+              <span class="right-text">Portland, ME</span><br/>
               Minor in Mathematics<br/><br/>
               <div class="section-text">
                 Relevant Coursework:<br/>
@@ -122,9 +210,9 @@
             <div class="section">
               <img class="icon" src="images/tech-support.png" alt="Tech Support Logo">
               <b>UMS Computing Services</b>
-              <span class="right">July 2017 - May 2020</span><br/>
+              <span class="right-text">July 2017 - May 2020</span><br/>
               Computer Consultant IV
-              <span class="right">Portland, ME</span><br/>
+              <span class="right-text">Portland, ME</span><br/>
               <div class="section-text">
                 <ul style="list-style:circle;">
                   <li>stuffs</li>
@@ -138,9 +226,9 @@
             <div class="section">
               <img class="icon" src="images/caregiver.png" alt="Caregiver Logo">
               <b>Home Health Care</b>
-              <span class="right">June 2016 - March 2018</span><br/>
+              <span class="right-text">June 2016 - March 2018</span><br/>
               Caregiver
-              <span class="right">Biddeford, ME</span><br/>
+              <span class="right-text">Biddeford, ME</span><br/>
               <div class="section-text">
                 <ul style="list-style:circle;">
                   <li>stuffs</li>
