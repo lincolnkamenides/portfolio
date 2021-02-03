@@ -92,5 +92,5 @@ function showSlides(n, name) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  slideCaptionText.innerHTML = dots[slideIndex-1].alt;
+  //slideCaptionText.innerHTML = dots[slideIndex-1].alt;
 }
