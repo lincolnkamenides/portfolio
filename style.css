@@ -111,7 +111,7 @@ h {
   transition: .4s;
   height: 100%;
   animation-name: roll-over;
-  animation-duration: 1s;
+  animation-duration: .5s;
 }
 
 @keyframes roll-over {
@@ -162,6 +162,13 @@ h {
 
 .intro p {
   padding-top: 40px;
+  text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    color: #fafafa;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 .vertical-bar {
@@ -445,10 +452,11 @@ h {
 #close-box {
   top: 10px;
   right: 10px;
-  height: 46px;
-  width: 46px;
+  height: 40px;
+  width: 37px;
   background-color: white;
   border-radius: 50%;
+  line-height: 35px;
 }
 
 .close:hover,
@@ -509,7 +517,7 @@ h {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;    
 }
 
 .resume-background {
@@ -537,6 +545,7 @@ h {
 
 .section {
   margin-bottom: 60px;
+  line-height: 25px;
 }
 
 .section-text {
