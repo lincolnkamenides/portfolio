@@ -144,7 +144,74 @@ h {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color2);
+  background-color: var(--color2);  
+}
+
+.bars-row {
+  height: 100%;
+  clear: both;
+}
+
+.intro p {
+  padding-top: 40px;
+}
+
+.vertical-bar {
+  top: 0;
+  background-color: white;
+  border-radius: 25px;
+  width: 20px;
+  margin-top: 0;
+  display: inline-block;
+  Vertical-align: top;
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: 0.6s;
+}
+
+.vertical-bar:hover {
+  transform: scaleY(1.25);
+}
+
+.first {
+  height: 55%;
+  background-color: var(--color4);
+  
+}
+
+.second {
+  height: 60%;
+  background-color: var(--color3);
+}
+
+.third {
+  height: 50%;
+  background-color: white;
+}
+
+.fourth {
+  height: 65%;
+  background-color: var(--color1);
+}
+
+.fifth {
+  height: 55%;
+  background-color: var(--color1);
+}
+
+.sixth {
+  height: 60%;
+  background-color: white;
+}
+
+.seventh {
+  height: 50%;
+  background-color: var(--color3);
+}
+
+.eigth {
+  height: 55%;
+  background-color: var(--color4);
 }
 
 .arrow {
@@ -153,6 +220,8 @@ h {
   width: 30px;
   bottom: 0;
   fill: white;
+  margin: auto;
+  text-align: center;
   transition: .4s
 }
 
@@ -160,7 +229,7 @@ h {
   padding: 7px;
   text-align: center;
   text-decoration: none;
-  margin: 0;
+  margin: auto;
   border-radius: 50%;
   background-color: white;
   fill: var(--color2);
@@ -249,7 +318,7 @@ h {
 
 .pointBoxArrowRight {
   margin-top: -100px;
-  margin-left: 73px;
+  margin-left: 73px;  
 }
 
 .pointBoxArrowRightMiddle {
