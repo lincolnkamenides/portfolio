@@ -34,31 +34,28 @@
         <!------------------ INTRO ------------------>	
         <div class="intro">
           <div class="bars-row">
-            
-          <div class="vertical-bar first"></div>
-          <div class="vertical-bar second"></div>
-          <div class="vertical-bar third"></div>
-          <div class="vertical-bar fourth"></div>
-          <div class="vertical-bar fifth"></div>
-          <div class="vertical-bar sixth"></div>
-          <div class="vertical-bar seventh"></div>
-          <div class="vertical-bar eigth"></div>
-       
-
-          <p id="home">Welcome to my personal page.</p>
-          <a href="#about">
-            <div class="arrow">
-              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 30.021 30.021" style="enable-background:new 0 0 30.021 30.021;"
-                xml:space="preserve">
-              <g>
-                <path d="M28.611,13.385l-11.011,9.352c-0.745,0.633-1.667,0.949-2.589,0.949c-0.921,0-1.842-0.316-2.589-0.949L1.411,13.385
-                  c-1.684-1.43-1.89-3.954-0.46-5.638c1.431-1.684,3.955-1.89,5.639-0.459l8.421,7.151l8.42-7.151
-                  c1.686-1.43,4.209-1.224,5.639,0.459C30.5,9.431,30.294,11.955,28.611,13.385z"/>
-              </g>
-            </div>
-          </a>
-        </div>
+            <div class="vertical-bar first"></div>
+            <div class="vertical-bar second"></div>
+            <div class="vertical-bar third"></div>
+            <div class="vertical-bar fourth"></div>
+            <div class="vertical-bar fifth"></div>
+            <div class="vertical-bar sixth"></div>
+            <div class="vertical-bar seventh"></div>
+            <div class="vertical-bar eigth"></div>
+            <p id="home">Welcome to my personal page.</p>
+            <a href="#about">
+              <div class="arrow">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 30.021 30.021" style="enable-background:new 0 0 30.021 30.021;"
+                  xml:space="preserve">
+                <g>
+                  <path d="M28.611,13.385l-11.011,9.352c-0.745,0.633-1.667,0.949-2.589,0.949c-0.921,0-1.842-0.316-2.589-0.949L1.411,13.385
+                    c-1.684-1.43-1.89-3.954-0.46-5.638c1.431-1.684,3.955-1.89,5.639-0.459l8.421,7.151l8.42-7.151
+                    c1.686-1.43,4.209-1.224,5.639,0.459C30.5,9.431,30.294,11.955,28.611,13.385z"/>
+                </g>
+              </div>
+            </a>
+          </div>
         </div>
         <!------------------ ABOUT ------------------>	
         <div class="about" id="about">
@@ -66,7 +63,7 @@
           <table>
             <tr>
               <td>
-                <img src="images/world.png" class="small-img" onclick="openImage(this, 'world')"
+                <img src="images/world.png" class="fade-in small-img world" onclick="openImage(this, 'world')"
                   alt="Culture and History.">
                 <div class="modal-item" id="world">
                   <div class="pointBoxArrow">
@@ -88,8 +85,9 @@
                   </div>
                 </div>
               </td>
-              <td rowspan="2" colspan="2"><img src="images/coding.png" class="large-img" onclick="openImage(this, 'coding')"
-                alt="Programming.">
+              <td rowspan="2" colspan="2">
+                <img src="images/coding.png" class="fade-in large-img coding" onclick="openImage(this, 'coding')"
+                  alt="Programming.">
                 <div class="modal-item" id="coding">
                   <div class="pointBoxArrow">
                     <svg class="pointBoxArrow pointBoxArrowRightMiddle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
@@ -110,8 +108,9 @@
                   </div>
                 </div>
               </td>
-              <td><img src="images/bts.png" class="small-img" onclick="openImage(this, 'bts')"
-                alt="BTS.">
+              <td>
+                <img src="images/bts.png" class="fade-in small-img bts" onclick="openImage(this, 'bts')"
+                  alt="BTS.">
                 <div class="modal-item" id="bts">
                   <div class="pointBoxArrow">
                     <svg class="pointBoxArrow pointBoxArrowLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
@@ -128,16 +127,15 @@
                         description
                       </div>
                     </div>
-                 
-                      <iframe width="250" height="140" src="https://www.youtube.com/embed/gdZLi9oWNZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
+                    <iframe width="250" height="140" src="https://www.youtube.com/embed/gdZLi9oWNZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td><img src="images/music.png" class="small-img" onclick="openImage(this, 'music')"
-                alt="Music.">
+              <td>
+                <img src="images/music.png" class="fade-in small-img music" onclick="openImage(this, 'music')"
+                  alt="Music.">
                 <div class="modal-item" id="music">
                   <div class="pointBoxArrow">
                     <svg class="pointBoxArrow pointBoxArrowRight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
@@ -146,7 +144,6 @@
                   </div>
                   <div class="modal-background right">
                     <span class="close music" id="close-box">&times;</span>
-                
                     <div class="modal-box">
                       <h id="title">Music</h>
                     </div>
@@ -154,14 +151,14 @@
                       <div class="description">
                         description
                       </div>
-                      
                     </div>
                     <img class="modal-content"src="images/clarinet.jpg">
                   </div>
                 </div>
               </td>
-              <td><img src="images/books.png" class="small-img" onclick="openImage(this, 'books')"
-                alt="Reading.">
+              <td>
+                <img src="images/books.png" class="fade-in small-img books" onclick="openImage(this, 'books')"
+                  alt="Reading.">
                 <div class="modal-item" id="books">
                   <div class="pointBoxArrow">
                     <svg class="pointBoxArrow pointBoxArrowLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
