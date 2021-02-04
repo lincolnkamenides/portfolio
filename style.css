@@ -109,9 +109,9 @@ h {
   width: auto;
   right: 0;
   transition: .4s;
+  height: 100%;
   animation-name: roll-over;
   animation-duration: 1s;
-  height: 100%;
 }
 
 @keyframes roll-over {
@@ -657,6 +657,7 @@ img.icon.link:hover {
   padding-bottom: 0px;
   text-align: left;
   line-height: 24px;
+  margin-top: 0;
 }
 
 .inner .row {
