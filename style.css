@@ -109,9 +109,14 @@ h {
   width: auto;
   right: 0;
   transition: .4s;
-  animation-name: roll-down;
+  animation-name: roll-over;
   animation-duration: 1s;
   height: 100%;
+}
+
+@keyframes roll-over {
+  from {transform: translateX(100%)}
+  to {transform: translateX(0)}
 }
 
 .topnav li {
