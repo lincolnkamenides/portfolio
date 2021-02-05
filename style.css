@@ -929,6 +929,7 @@ footer {
   border-radius: 50%;
   background: var(--color2);
   color: white;
+  transition: 0.3s;
 }
 
 .fa:hover {
