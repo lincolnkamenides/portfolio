@@ -55,7 +55,7 @@ function toggleSideBar() { // toggles the menu-button open and closed
 
 // open image modal on about section
 function openImage(image, item) { //opens image in about with modal
- var modals = ['world', 'coding', 'bts', 'music', 'books'];
+ var modals = ['world', 'coding', 'cat', 'music', 'books'];
 
  // Get the modal
  var modal = document.getElementById(item);
