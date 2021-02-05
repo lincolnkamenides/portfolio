@@ -421,8 +421,8 @@ h {
 /* Caption of Modal Image */
 .description {
   margin: auto;
-  text-align: center;
-  width: 80%;
+  text-align: justify;
+  width: 90%;
   color: var(--color1);
   padding-bottom: 10px;
 }
