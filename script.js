@@ -57,6 +57,10 @@ function toggleSideBar() { // toggles the menu-button open and closed
 function openImage(image, item) { //opens image in about with modal
  var modals = ['world', 'coding', 'cat', 'music', 'books'];
 
+ // gets click-me content
+ var clickMe1 = document.getElementById("arrow-gif");
+ var clickMe2 = document.getElementById("arrow-gif-text");
+
  // Get the modal
  var modal = document.getElementById(item);
 
@@ -64,6 +68,10 @@ function openImage(image, item) { //opens image in about with modal
  var img = image;
  img.onclick = function(){
    modal.style.display = "block";
+
+   // closes click me after first click
+   clickMe1.style.display = "none";
+   clickMe2.style.display = "none";
 
    // closes other modals
    for(var i = 0; i < modals.length; i++) {
