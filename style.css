@@ -542,9 +542,15 @@ h {
 }
 
 @media only screen and (max-width: 435px){
-    .text {
+  .arrow-gif {
+    width: 20%;
+    margin-left: 2%;
+  }  
+  
+  .text {
       margin-top: -10%;
       margin-left: 14%;
+      width: 17%;
     }
   }
 
