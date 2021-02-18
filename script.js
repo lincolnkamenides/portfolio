@@ -65,8 +65,6 @@ function openImage(image, item) { //opens image in about with modal
  var modal = document.getElementById(item);
 
  // Get the image and insert it inside the modal - use its "alt" text as a caption
- var img = image;
- img.onclick = function(){
    modal.style.display = "block";
 
    // closes click me after first click
@@ -78,7 +76,7 @@ function openImage(image, item) { //opens image in about with modal
     if(modals[i].localeCompare(item) != 0) {
      document.getElementById(modals[i]).style.display = "none";
     }
-  }
+  
  }
 
  // Get the <span> element that closes the modal
@@ -100,11 +98,8 @@ function openSlideShow(img, modal, name) { //opens image in about with modal
  getSlides(name);
 
  // Get the image and insert it inside the modal - use its "alt" text as a caption
- var img = img;
- img.onclick = function(){
    modal.style.display = "block";
- }
-
+ 
  // Get the <span> element that closes the modal
  var span = document.getElementsByClassName("close " + name)[0];
 
