@@ -61,6 +61,7 @@ h {
   position: absolute;
   right: 0;
   top: 0;
+  transition: 0.3s;
 }
 
 .menu-button:hover {
