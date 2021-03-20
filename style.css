@@ -328,20 +328,18 @@ h {
   filter: grayscale(0%);
   cursor: pointer;
   transform: scale(1.1);
-  transition-delay: 0s;
 }
 
 .large-img {
   width: 400px;
   width: 100%;
-  transition: .4s
+  transition: .4s;
 }
 
 .large-img.is-visible:hover {
   filter: grayscale(0%);
   cursor: pointer;
   transform: scale(1.1);
-  transition-delay: 0s;
 }
 
 @media screen and (max-width:860px) {
