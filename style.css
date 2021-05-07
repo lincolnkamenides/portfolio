@@ -78,8 +78,8 @@ h {
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+  transform: rotate(-45deg) translate(-8px, 8px);
 }
 
 .change .bar2 {opacity: 0;}
@@ -90,7 +90,6 @@ h {
 }
 
 .overlay #menu {
-  display: none;
   position: fixed;
   text-align: center;
   z-index: 1;
@@ -100,7 +99,6 @@ h {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: #fafafa;
   background-color: rgba(255,255,255,0.9);
   list-style: none;
   margin: 0;
@@ -111,13 +109,11 @@ h {
   right: 0;
   transition: .4s;
   height: 100%;
-  animation-name: roll-over;
   animation-duration: .5s;
 }
 
-@keyframes roll-over {
-  from {transform: translateX(100%)}
-  to {transform: translateX(0)}
+.not--active {
+  transform: translateX(100%);
 }
 
 .topnav li {
@@ -253,7 +249,17 @@ h {
   fill: white;
   margin: auto;
   text-align: center;
-  transition: .4s
+  border-radius: 50%;
+  transition: .6s; 
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 100%}
 }
 
 .arrow:hover {
@@ -261,7 +267,6 @@ h {
   text-align: center;
   text-decoration: none;
   margin: auto;
-  border-radius: 50%;
   background-color: white;
   fill: var(--color2);
 }
@@ -274,6 +279,7 @@ h {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 .arrow-gif {
@@ -418,8 +424,18 @@ h {
   margin-left: 100px;
 }
 
+.right-bottom {
+  margin-top: -300px;
+  margin-left: 100px;
+}
+
 .left {
   margin-top: -220px;
+  margin-left: -187px;
+}
+
+.left-bottom {
+  margin-top: -300px;
   margin-left: -187px;
 }
 
@@ -523,6 +539,14 @@ h {
   }
 
   .left {
+    margin-left: -225px;
+  }
+
+  .right-bottom {
+    margin-left: 50px;
+  }
+
+  .left-bottom {
     margin-left: -225px;
   }
 
@@ -726,7 +750,7 @@ button:hover {
 }
 
 .inner {
-  max-width: 1024px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -747,7 +771,7 @@ button:hover {
 }
 
 .inner .row {
-  clear: both;
+  display:flex;
 }
 
 .polaroid {
@@ -757,7 +781,8 @@ button:hover {
   margin-bottom: 25px;
   color: var(--color3);
   overflow: hidden;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin: 20px;
   line-height: 0px;
 }
@@ -782,6 +807,7 @@ button:hover {
   overflow: hidden;
   cursor: pointer;
   position: relative;
+  flex: 0 1 auto;
 }
 
 .overlay-plus {
@@ -818,14 +844,22 @@ button:hover {
 }
 
 .container {
+  flex: 1 1 auto;
   text-align: center;
   padding: 20px 20px;
   overflow: visible;
   height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container p {
+  flex: 1 1 auto;
 }
 
 #p-code-skill {
   margin: 0;
+  flex: 0 1 auto;
 }
 
 .code-skill {
@@ -969,6 +1003,11 @@ button:hover {
 @media screen and (max-width:860px) {
   .polaroid {
     width: 90%;
+    display: inline-block;
+  }
+
+  .container, .inner .row {
+    display: block;
   }
  
   .first-polaroid-rect {
